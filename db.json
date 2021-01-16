@@ -1,0 +1,277 @@
+{
+  "ent": [
+    {
+      "question": "zzzz ",
+      "Answer": "zzzz",
+      "option1": "zzzz",
+      "option2": "zzz",
+      "option3": "zzzz",
+      "id": 2
+    },
+    {
+      "question": "li ",
+      "Answer": "li",
+      "option1": "li",
+      "option2": "li",
+      "option3": "li",
+      "id": 3
+    },
+    {
+      "question": "entr",
+      "Answer": "entr",
+      "option1": "entr",
+      "option2": "entr",
+      "option3": "entr",
+      "id": 4
+    },
+    {
+      "question": "gggg",
+      "Answer": "ggg",
+      "option1": "gggg",
+      "option2": "ggg",
+      "option3": "gggg",
+      "id": 5
+    },
+    {
+      "question": "saSasasaASas",
+      "Answer": "saSAsA",
+      "option1": "SAsaSA",
+      "option2": "sASasa",
+      "option3": "saSSA",
+      "id": 6
+    },
+    {
+      "question": "jjjj",
+      "Answer": "jjjj",
+      "option1": "kkkk",
+      "option2": "llllll",
+      "option3": "mmmm",
+      "id": 7
+    }
+  ],
+  "lit": [
+    {
+      "question": "atoz",
+      "Answer": "Cristiano Ronaldo",
+      "option1": "Airana Grande",
+      "option2": "Kylie Jenner",
+      "option3": "Lionel Messi",
+      "weight": 1,
+      "id": "asfd"
+    },
+    {
+      "question": "Which of the following indian has won the oscar? ",
+      "Answer": "Satyajit Ray",
+      "option1": "Priyadarshan",
+      "option2": "Yash Chopra",
+      "option3": "Anurag Kashyap",
+      "weight": 1,
+      "id": "asfrr"
+    },
+    {
+      "question": "Which is the highest grossing movie in india?",
+      "Answer": "Avengers:Endgame",
+      "option1": "Avengers:Infinity War",
+      "option2": "The Jungle Book",
+      "option3": "FF8",
+      "weight": 1,
+      "id": "asff"
+    },
+    {
+      "question": "Which of the following indian actor has shared sliver screen with tom cruise?",
+      "Answer": "Anil Kapoor",
+      "option1": "Akshay Kumar",
+      "option2": "Anupam Kher",
+      "option3": "Irrfan Khan",
+      "weight": 1,
+      "id": "asfpi"
+    },
+    {
+      "question": "Which of the following movie was released in theaters?",
+      "Answer": "Ramprasad ki tehrvi",
+      "option1": "Gulabo Sitabo",
+      "option2": "Laxmi bomb",
+      "option3": "Ludo",
+      "weight": 1,
+      "id": "asfdiuy"
+    },
+    {
+      "question": "Which of the following indian has won the oscar? ",
+      "Answer": "Satyajit Ray",
+      "option1": "Priyadarshan",
+      "option2": "Yash Chopra",
+      "option3": "Anurag Kashyap",
+      "weight": 1,
+      "id": "asfdd"
+    },
+    {
+      "question": "Which is the highest grossing movie in india?",
+      "Answer": "Avengers:Endgame",
+      "option1": "Avengers:Infinity War",
+      "option2": "The Jungle Book",
+      "option3": "FF8",
+      "weight": 1,
+      "id": "astsd"
+    },
+    {
+      "question": "Which of the following indian actor has shared sliver screen with tom cruise?",
+      "Answer": "Anil Kapoor",
+      "option1": "Akshay Kumar",
+      "option2": "Anupam Kher",
+      "option3": "Irrfan Khan",
+      "weight": 1,
+      "id": "asfadds"
+    },
+    {
+      "question": "Which of the following movie was released in theaters?",
+      "Answer": "Ramprasad ki tehrvi",
+      "option1": "Gulabo Sitabo",
+      "option2": "Laxmi bomb",
+      "option3": "Ludo",
+      "weight": 1,
+      "id": "asjug"
+    },
+    {
+      "question": "ooo ",
+      "Answer": "ppp",
+      "option1": "oooo",
+      "option2": "oo",
+      "option3": "ooo",
+      "id": "T_dAKwN"
+    },
+    {
+      "question": "vvvv",
+      "Answer": "vvvv",
+      "option1": "vvvv",
+      "option2": "vvvv",
+      "option3": "vvvvv",
+      "id": "WuVxLdY"
+    },
+    {
+      "question": "rrrr",
+      "Answer": "rrrr",
+      "option1": "rrrrr",
+      "option2": "rrrrr",
+      "option3": "rrrr",
+      "id": "g6_Ym_m"
+    },
+    {
+      "question": "xxxx",
+      "Answer": "xxxx",
+      "option1": "xxx",
+      "option2": "xxxx",
+      "option3": "xxxx",
+      "id": "D5JNEMh"
+    }
+  ],
+  "subject_data": [
+    {
+      "username": "abcd",
+      "subject_name": "lit",
+      "highest_score": "23",
+      "no_of_times_attempted": "3",
+      "total_ques": 12,
+      "max_marks": 12,
+      "id": 1
+    },
+    {
+      "username": "abcd",
+      "subject_name": "ent",
+      "highest_score": "23",
+      "no_of_times_attempted": "3",
+      "total_ques": 12,
+      "max_marks": 12,
+      "id": 1
+    },
+    {
+      "username": "abcd",
+      "subject_name": "sports",
+      "highest_score": "23",
+      "no_of_times_attempted": "3",
+      "total_ques": 12,
+      "max_marks": 12,
+      "id": 1
+    },
+    {
+      "username": "abcd",
+      "subject_name": "gk",
+      "highest_score": "23",
+      "no_of_times_attempted": "3",
+      "total_ques": 12,
+      "max_marks": 12,
+      "id": 1
+    },
+    {
+      "username": "abcd",
+      "subject_name": "comp",
+      "highest_score": "23",
+      "no_of_times_attempted": "3",
+      "total_ques": 12,
+      "max_marks": 12,
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "username": "Ghanshyam",
+      "email": "sdfs@ew.dffd",
+      "password": "d32c78b4596a6b63a5bf73708a15ac3f",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 12
+    },
+    {
+      "username": "brk",
+      "email": "dff@dss.dsf",
+      "password": "6df5982a1b9512461368a1ad1df9159d",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 13
+    },
+    {
+      "username": "abcd",
+      "email": "dsf@das.ds",
+      "password": "5975c85e8d2756810491f99edfa1cfed",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 14
+    },
+    {
+      "username": "defg",
+      "email": "fd@e.sfdf",
+      "password": "f1ce609eb6591ecd3dc405282fef22f9",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 15
+    },
+    {
+      "username": "g6",
+      "email": "yddd@dfghjvhj.f",
+      "password": "c9a140d1a756e793ea9a6927c070b6c7",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 16
+    }
+  ],
+  "admin": [
+    {
+      "username": "admin_1",
+      "password": "6df5982a1b9512461368a1ad1df9159d"
+    }
+  ]
+}
