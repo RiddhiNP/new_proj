@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign_in</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./session.js"></script>
+</head>
+
+<body>
+    Name: <input type="text" name="username" id="username" class="text" maxlength="30" />
+    <br />
+    Password:<input type="password" name="password" id="password" class="text" maxlength="30" />
+    <input type="hidden" id="hdnSession" data-value="@Request.RequestContext.HttpContext.Session['someKey']" />
+    <br />
+    <input type="submit" name="btnSubmit" id="btnSubmit" />
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#btnSubmit").click(function () {
+                //collect userName and password entered by users
+                $username = $("#username").val();
+                $password = $("#password").val();
+                $sessionValue = $("#hdnSession").data('someKey');
+                //alert($sessionValue);
+                check_log($username, $password);
+
+            });
+        });
+
+
+        function check_log($username, $password) { // loginForm is submitted
+
+
+            // $username = $('#username').val(); // get username
+            // $password = $('#password').val(); // get password
+            //alert("inside click func");
+            //alert($username);
+            if ($username && $password) { // values are not empty
+                $.ajax({
+
+                    method: "GET",
+                    url: "http://localhost:3000/users",
+                    // contentType: "application/json; charset=utf-8",
+
+
+                    success: function (data, status) {
+                        $flag = 0;
+                        // alert("inFunc");
+                        //console.log(data[0].id);
+                        for ($i = 0; $i < data.length; $i++) {
+
+                            if (data[$i].username == $username) {
+
+                                alert("USER ALREADY EXIST!");
+                                $flag = 0;
+                                $(window).attr('location', './sign_in.html');
+                                break;
+                                // $(window).attr('location', './log_success.html');
+
+                            }
+                            else {
+
+                                $flag = 1;
+                                // continue;
+                            }
+                        }
+
+                        if ($flag == 1) {
+                            auth($username, $password);
+                        }
+
+
+
+                        // } else {
+                        //     // $(window).attr('location', './log_in.html');
+                        //     $(location).attr('href','https://www.sassmeister.com/');
+                        // }}
+                    },
+                    error: function (data, status) {
+
+                        alert('error');
+                    },
+                    // $(location).attr('href', 'http://www.example.com')
+                    // $(window).attr('location', 'http://www.example.com')
+                    // $(location).prop('href', 'http://www.example.com')
+                    // error: function () {
+                    //     alert("error");
+                    // }
+
+                }) // success
+            } // ajax
+
+
+            e.preventDefault();
+
+        }
+
+        //authenticate function to make ajax call
+        function auth($username, $password) {
+            $.ajax({
+                type: "POST",
+                //SEND TO MY SERVER URL
+                url: "http://localhost:3000/users",
+                dataType: 'json',
+                //async: false,
+                data: { 'username': $username, 'password': $password },
+                success: function (response) {
+                    $(window).attr('location', './user_dash.html');
+                    $.session.set('username', $username);
+                   
+                   
+                    console.log(response);
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>

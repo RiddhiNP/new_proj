@@ -1,0 +1,130 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>login </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./session.js"></script>
+    <script type = "text/javascript" >
+        function disableBackButton()
+        {
+        window.history.forward();
+        }
+        setTimeout("disableBackButton()", 0);
+        </script>
+    <style type="text/css">
+        #loginContent {
+            width: 350px;
+            margin: 100px auto;
+        }
+
+        button[type] {
+            margin: 0.5em 0;
+        }
+    </style>
+</head>
+
+<body  onload="disableBackButton()">
+    <div id="loginContent" class="container">
+        <div id="loginResult" style="display:none;">
+        </div>
+        <form id="loginForm" name="loginForm" method="post" action="">
+            <fieldset>
+                <legend>Enter information</legend>
+                <p>
+                    <label for="username">Username</label>
+                    <br />
+                    <input type="text" id="username" name="username" class="text" size="20" />
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <br />
+                    <input type="password" id="password" name="password" class="text" size="20" />
+                </p>
+                <p>
+                    <button type="submit" class="button positive">
+
+                        Login
+                    </button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            if ($.session.get('username') !== undefined) {
+               $.session.clear();
+               $(window).attr('location', './log_in.html');
+
+            }
+            $("form#loginForm").submit(function (e) { // loginForm is submitted
+
+
+                $username = $('#username').val(); // get username
+                $password = $('#password').val(); // get password
+                if ($username && $password) { // values are not empty
+                    $.ajax({
+
+                        method: "GET",
+                        url: "http://localhost:3000/users",
+                        // contentType: "application/json; charset=utf-8",
+
+
+                        success: function (data, status) {
+                            $flag = 0;
+                            // alert("inFunc");
+                            //console.log(data[0].id);
+                            for ($i = 0; $i < data.length; $i++) {
+
+                                if (data[$i].username == $username && data[$i].password == $password) {
+                                    $flag = 0;
+                                    $(window).attr('location', './user_dash.html');
+                                    $.session.set('username',$username);
+                                    //localStorage.setItem('username',$username);
+                                    break;
+
+                                }
+                                else {
+                                    $flag = 1;
+                                }
+                            }
+
+                            if ($flag == 1) {
+                                alert("USER Don't  EXIST!");
+                                $(window).attr('location', './sign_in.html');
+                            }
+                           
+                        },
+                        error: function (data, status) {
+
+                            alert('error');
+                        },
+                        
+
+                    }) // success
+                } // ajax
+
+
+                e.preventDefault();
+
+            } // if
+            )
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+//
+<!-- <script>

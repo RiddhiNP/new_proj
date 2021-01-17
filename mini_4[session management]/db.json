@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "b"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "c"
+    },
+    {
+      "username": "snp",
+      "password": "PSMMSM1",
+      "id": 3
+    }
+  ],
+  "ent": [
+    {
+      "id": 2,
+      "question": "5858",
+      "option1": "sadsad",
+      "option2": "asdad",
+      "option3": "asdasd",
+      "option4": "afasdasf"
+    }
+  ],
+  "lit": [
+    {
+      "id": 1,
+      "question": " nb nh",
+      "option1": " b hn",
+      "option2": " n n",
+      "option3": "gh",
+      "option4": "hb "
+    },
+    {
+      "id": 3,
+      "question": "qw",
+      "option1": "qwqw",
+      "option2": "qwqw",
+      "option3": "qwqw",
+      "option4": "qwqwqww"
+    }
+  ]
+}
