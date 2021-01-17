@@ -266,12 +266,28 @@
       "tech": "-1",
       "sports": "-1",
       "id": 16
-    }
-  ],
-  "admin": [
+    },
+    {
+      "username": "equinox",
+      "email": "sdfd@fsd.ddf",
+      "password": "b09767a1fc751ed53bf3f9bfe63894b2",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 17
+    },
     {
       "username": "admin_1",
-      "password": "6df5982a1b9512461368a1ad1df9159d"
+      "email": "sdfd@fsd.ddf",
+      "password": "6df5982a1b9512461368a1ad1df9159d",
+      "ent": "-1",
+      "lit": "-1",
+      "gk": "-1",
+      "tech": "-1",
+      "sports": "-1",
+      "id": 18
     }
   ]
 }

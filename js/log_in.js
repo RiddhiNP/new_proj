@@ -20,18 +20,18 @@ $(document).ready(function () {
                     for ($i = 0; $i < data.length; $i++) {
 
                         if (data[$i].username == $username && data[$i].password == $password) {
-                          
                             $flag = 0;
-                            $(window).attr('location', '../html/user_dashboard.html');
+                            if(data[$i].username != "admin_1")
+                            {   $(window).attr('location', '../html/user_dashboard.html');
+                            }
+                            else{
+                                $(window).attr('location', '../html/admin_dash.html');
+                            }
                             $.session.set('username',$username);
                             break;
 
                         }
-                        else if(data[$i].username != $username){
-
-                            admin($username,$password);
-                           
-                        }
+                        
                         else{
                             $flag = 1;
                         }
@@ -54,51 +54,51 @@ $(document).ready(function () {
 
 
 
-            function admin($username,$password){
+            // function admin($username,$password){
 
 
-                $.ajax({
+            //     $.ajax({
 
-                    method: "GET",
-                    url: "http://localhost:3000/admin",
-                    // contentType: "application/json; charset=utf-8",
+            //         method: "GET",
+            //         url: "http://localhost:3000/admin",
+            //         // contentType: "application/json; charset=utf-8",
     
     
-                    success: function (data, status) {
-                        $flag = 0;
+            //         success: function (data, status) {
+            //             $flag = 0;
                         
-                        for ($i = 0; $i < data.length; $i++) {
+            //             for ($i = 0; $i < data.length; $i++) {
     
-                            if (data[$i].username == $username && data[$i].password == $password) {
+            //                 if (data[$i].username == $username && data[$i].password == $password) {
                               
-                                $flag = 0;
-                                $(window).attr('location', '../html/admin_dash.html');
-                                $.session.set('username',$username);
-                                break;
+            //                     $flag = 0;
+            //                     $(window).attr('location', '../html/admin_dash.html');
+            //                     $.session.set('username',$username);
+            //                     break;
     
-                            }
+            //                 }
                             
-                            else{
-                                $flag = 1;
-                            }
+            //                 else{
+            //                     $flag = 1;
+            //                 }
                             
-                        }
+            //             }
     
-                        if ($flag == 1) {
-                            alert("Username Incorrect or Password Didn't Match!!!");
-                            $(window).attr('location', '../html/login.html');
-                        }
+            //             if ($flag == 1) {
+            //                 alert("Username Incorrect or Password Didn't Match!!!");
+            //                 $(window).attr('location', '../html/login.html');
+            //             }
                         
-                    },
-                    error: function (data, status) {
+            //         },
+            //         error: function (data, status) {
     
-                        alert('error');
-                    },
+            //             alert('error');
+            //         },
                    
     
-                })
+            //     })
 
-            }
+            // }
         } // ajax
 
 
